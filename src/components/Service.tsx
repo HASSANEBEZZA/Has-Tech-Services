@@ -96,7 +96,8 @@ const Services: React.FC = () => {
         <div className="text-center mb-8">
           <h3 className="text-2xl font-semibold text-blue-700 mb-4">Zones d'Intervention</h3>
           <p className="text-lg text-gray-700">
-            Basés dans le nord ..., nous intervenons aussi bien dans les zones urbaines que rurales. Des frais de déplacement s'appliquent pour les interventions au-delà de 20 km.
+          Basés à Senlis, dans le département de l’Oise, nous intervenons dans les principales villes du département, notamment Noyon, Clermont, Compiègne, Creil, Beauvais, Méru et Senlis. Nous opérons aussi bien dans les zones urbaines que rurales pour répondre à vos besoins.
+          Des frais de déplacement s’appliquent pour les interventions situées au-delà de 20 km.
           </p>
         </div>
 
