@@ -1,0 +1,28 @@
+// src/components/Header.scss
+@import './_variables';
+
+.header {
+  background-color: $dark-color;
+  color: $light-gray;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-container {
+    img.logo {
+      width: 10rem; // 160px, vous pouvez ajuster cette valeur
+      height: auto;
+    }
+  }
+
+  .nav-link {
+    color: $light-gray;
+    text-decoration: none;
+    margin-right: 15px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

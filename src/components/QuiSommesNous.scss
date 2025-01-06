@@ -1,0 +1,42 @@
+.qui-sommes-nous {
+    .image-container {
+      width: 100%; /* L'image occupe toute la largeur de son conteneur */
+      max-width: 500px; /* Réduire un peu la largeur maximale des images à 500px */
+      height: auto; /* Garder les proportions de l'image */
+      margin: 0 auto; /* Centrer l'image horizontalement */
+      padding: 1rem; /* Espacement autour de l'image */
+  
+      img {
+        width: 100%; /* L'image prend toute la largeur de son conteneur */
+        height: auto; 
+        display: block; 
+        border-radius: 8px; /* Arrondir légèrement les bords de l'image */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ajouter une ombre douce autour de l'image */
+      }
+    }
+  
+    /* Pour les petits écrans */
+    @media (max-width: 768px) {
+      .image-container {
+        padding: 0.5rem; 
+        max-width: 400px; 
+      }
+  
+      img {
+        max-width: 100%; 
+      }
+    }
+  
+    /* mobiles */
+    @media (max-width: 480px) {
+      .image-container {
+        padding: 0.25rem; 
+        max-width: 300px; 
+      }
+  
+      img {
+        max-width: 100%; 
+      }
+    }
+  }
+  

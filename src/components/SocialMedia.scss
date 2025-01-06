@@ -1,0 +1,29 @@
+.social-media-section {
+    background-color: rgba(215, 217, 221, 0.9);
+    padding: 10px 0; /* Hauteur réduite */
+    text-align: center;
+  
+    .container {
+      max-width: 1024px; /* Limite de la largeur */
+      margin: 0 auto; /* contenu centré */
+    }
+  
+    h3 {
+      color: rgba(29, 78, 216, 0.9);
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+  
+    a {
+      color: rgba(29, 78, 216, 0.9);
+      font-size: 18px;
+      margin: 0 5px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #043277; /* Gris clair */
+      }
+    }
+  }
+  
