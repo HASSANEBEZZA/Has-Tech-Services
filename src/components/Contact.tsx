@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
           </h3>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://twitter.com"
+              href="https://x.com/has_svc"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-2xl hover:text-gray-300"
@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
               <FaTwitter />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/people/Has-Tech-Services/61571620113575/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-2xl hover:text-gray-300"
@@ -125,7 +125,7 @@ const Contact: React.FC = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/has.tech.svc/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-2xl hover:text-gray-300"
