@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa'; // Import des nouvelles icônes
 import '../components/SocialMedia.scss';
 
 const Contact: React.FC = () => {
-  // États pour gérer les champs de formulaire
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
 
-  // Gestion des changements de formulaire
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Soumission du formulaire
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
@@ -24,7 +21,7 @@ const Contact: React.FC = () => {
       const response = await axios.post('http://localhost:3002/api/services/send-email', formData);
       if (response.status === 200) {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '' }); // Réinitialiser le formulaire
+        setFormData({ name: '', email: '', message: '' });
       }
     } catch (error: any) {
       setStatus('error');
@@ -91,7 +88,6 @@ const Contact: React.FC = () => {
               {status === 'loading' ? 'Envoi en cours...' : 'Envoyer'}
             </button>
           </form>
-          {/* Message de succès ou d'erreur */}
           {status === 'success' && (
             <p className="text-green-600 text-lg mt-4">Votre message a été envoyé avec succès !</p>
           )}
@@ -131,6 +127,22 @@ const Contact: React.FC = () => {
               className="text-white text-2xl hover:text-gray-300"
             >
               <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/has-tech-svc-10bb27345/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-2xl hover:text-gray-300"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.tiktok.com/@has.tech.svc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-2xl hover:text-gray-300"
+            >
+              <FaTiktok />
             </a>
           </div>
         </div>
