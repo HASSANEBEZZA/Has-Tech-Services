@@ -24,8 +24,6 @@ const QuiSommesNous: React.FC = () => {
           {/* Ajout de la vidéo YouTube */}
           <div className="video-container mt-4 mb-8 text-center">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/X37ZSsuOha4"
               title="YouTube Video"
               frameBorder="0"
