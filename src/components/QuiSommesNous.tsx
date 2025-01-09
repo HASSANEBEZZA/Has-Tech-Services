@@ -21,12 +21,17 @@ const QuiSommesNous: React.FC = () => {
             pour optimiser leurs activités.
           </p>
 
-          {/* Ajout de la première image */}
-          <div className="image-container mt-4 mb-8 text-center">
-            <img 
-              src="https://i.imgur.com/9Ht2sWW.png" 
-              alt="Technologie" 
-            />
+          {/* Ajout de la vidéo YouTube */}
+          <div className="video-container mt-4 mb-8 text-center">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/X37ZSsuOha4"
+              title="YouTube Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <ul className="list-disc pl-8 mb-6 mt-6">
