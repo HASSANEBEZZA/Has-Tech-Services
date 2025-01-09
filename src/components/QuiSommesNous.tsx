@@ -16,8 +16,8 @@ const QuiSommesNous: React.FC = () => {
             Has Tech Services est une entreprise dynamique spécialisée
             dans le dépannage informatique, l'installation d’équipements réseau
             et l’accompagnement digital. Notre mission est de proposer des
-            solutions rapides, efficaces et accessibles aux particuliers, TPE
-            et PME, tout en valorisant l’utilisation des outils informatiques
+            solutions rapides, efficaces et accessibles aux particuliers, et aux entreprises,
+            tout en valorisant l’utilisation des outils informatiques
             pour optimiser leurs activités.
           </p>
 
