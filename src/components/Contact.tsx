@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa'; // Import des nouvelles icônes
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; // Ajout de l'icône YouTube
 import '../components/SocialMedia.scss';
 
 const Contact: React.FC = () => {
@@ -143,6 +143,14 @@ const Contact: React.FC = () => {
               className="text-white text-2xl hover:text-gray-300"
             >
               <FaTiktok />
+            </a>
+            <a
+              href="https://www.youtube.com/@HasTechServices"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-2xl hover:text-gray-300"
+            >
+              <FaYoutube />
             </a>
           </div>
         </div>
