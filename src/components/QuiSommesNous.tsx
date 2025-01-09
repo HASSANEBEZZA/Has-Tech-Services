@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuiSommesNous.scss'; // Assurez-vous d'importer le fichier SCSS
+import './QuiSommesNous.scss'; 
 
 const QuiSommesNous: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const QuiSommesNous: React.FC = () => {
           {/* Présentation Générale */}
           <h3 className="text-2xl font-semibold mb-4">Présentation Générale</h3>
           <p className="mb-4">
-            Has Tech Services est une micro-entreprise dynamique spécialisée
+            Has Tech Services est une entreprise dynamique spécialisée
             dans le dépannage informatique, l'installation d’équipements réseau
             et l’accompagnement digital. Notre mission est de proposer des
             solutions rapides, efficaces et accessibles aux particuliers, TPE
