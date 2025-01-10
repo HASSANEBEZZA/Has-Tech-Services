@@ -11,9 +11,11 @@ const Header: React.FC = () => {
   return (
     <header className="header bg-blue-700 text-white py-4 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-6">
-        {/* Logo */}
+        {/* Logo avec redirection */}
         <div className="logo-container">
-          <img src={logo} alt="Has Tech Services Logo" className="logo w-32 h-auto" />
+          <a href="#home" onClick={() => setIsMenuOpen(false)}>
+            <img src={logo} alt="Has Tech Services Logo" className="logo w-32 h-auto" />
+          </a>
         </div>
 
         {/* Menu toggle button */}
