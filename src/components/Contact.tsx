@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; // Ajout de l'icône YouTube
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; 
 import '../components/SocialMedia.scss';
 
 const Contact: React.FC = () => {

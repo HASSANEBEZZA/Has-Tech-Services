@@ -1,0 +1,54 @@
+.repair-info {
+    /* Styles généraux */
+    padding: 20px;
+    background-color: #f4f7fb; /* Fond léger */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repair-info h1, .repair-info h2 {
+    color: #1e3a8a; /* Bleu */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .repair-info h1 {
+    font-size: 2.5rem; /* Taille du titre principale augmentée */
+    margin-bottom: 10px;
+  }
+  
+  .repair-info h2 {
+    font-size: 1.8rem; /* Taille du sous-titre augmentée */
+    margin-bottom: 15px;
+  }
+  
+  .repair-info p {
+    font-size: 1.2rem; /* Taille du texte augmentée */
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .repair-info img {
+    display: block;
+    max-width: 30%; /* Réduit la taille des images à 30% */
+    height: auto;
+    margin: 20px auto; /* Centre l'image */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repair-info button {
+    padding: 12px 24px;
+    font-size: 1.2rem; /* Taille du texte du bouton augmentée */
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .repair-info button:hover {
+    background-color: #1d4ed8; /* Bleu plus foncé au survol */
+  }
+  
