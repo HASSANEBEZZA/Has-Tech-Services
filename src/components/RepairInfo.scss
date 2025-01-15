@@ -29,7 +29,7 @@
   
   .repair-info img {
     display: block;
-    max-width: 30%; /* Réduit la taille des images à 30% */
+    width: 33%; /* Réduit la taille des images à 33% pour les grands écrans */
     height: auto;
     margin: 20px auto; /* Centre l'image */
     border-radius: 8px;
@@ -50,5 +50,13 @@
   
   .repair-info button:hover {
     background-color: #1d4ed8; /* Bleu plus foncé au survol */
+  }
+  
+  /* Media Query pour les petits écrans (mobile) */
+  @media (max-width: 768px) {
+    .repair-info img {
+      width: 100% !important; /* Agrandit l'image à 100% de la largeur disponible */
+      margin: 20px 0; /* Ajuste la marge pour éviter que l'image touche les bords */
+    }
   }
   
