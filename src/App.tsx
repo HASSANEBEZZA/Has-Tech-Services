@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Services from './components/Service';
 import RepairInfo from './components/RepairInfo';
+import NetworkServices from './components/NetworkServices';  // Import de la nouvelle page
 
 const HomePage: React.FC = () => {
   return (
@@ -48,6 +49,9 @@ const App: React.FC = () => {
             
             {/* Page des informations de réparation */}
             <Route path="/repair-info" element={<RepairInfo />} />
+            
+            {/* Page Installation et Configuration Réseau */}
+            <Route path="/network-setup" element={<NetworkServices />} /> {/* Ajout de la route pour NetworkServices */}
           </Routes>
         </main>
         

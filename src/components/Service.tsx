@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
           {/* Service 2 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-            <Link to="/network-setup">
+            <Link to="/network-setup"> {/* Ceci est la route vers NetworkServices */}
               <img
                 src="https://i.imgur.com/CA5GfO9.png"
                 alt="Illustration de configuration réseau"
@@ -51,7 +51,7 @@ const Services: React.FC = () => {
               />
             </Link>
             <h3 className="text-xl font-semibold text-center">
-              <Link to="/network-setup">Installation et Configuration Réseau</Link>
+              <Link to="/network-setup">Installation et Configuration Réseau</Link> {/* Lien vers la page NetworkServices */}
             </h3>
             <ul className="list-disc list-inside text-gray-700">
               <li>Installation de routeurs, switchs, et câblage Ethernet.</li>
@@ -60,7 +60,7 @@ const Services: React.FC = () => {
             </ul>
           </div>
 
-          {/* Service 3 */}
+          {/* Autres services */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/support-training">
               <img
@@ -78,7 +78,6 @@ const Services: React.FC = () => {
             </ul>
           </div>
 
-          {/* Service 4 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/web-creation">
               <img
@@ -97,31 +96,7 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        {/* Pourquoi choisir Has Tech Services */}
-        <div className="text-center my-16">
-          <h3 className="text-2xl font-semibold text-blue-700 mb-4">Pourquoi Choisir Has Tech Services ?</h3>
-          <ul className="list-disc list-inside text-lg text-gray-700">
-            <li><strong>Expertise</strong> : Solutions rapides et fiables.</li>
-            <li><strong>Accompagnement personnalisé</strong> : Services adaptés à vos besoins.</li>
-            <li><strong>Satisfaction garantie</strong> : Rapport détaillé et garantie de 30 jours.</li>
-          </ul>
-        </div>
-
-        {/* Zones d'intervention */}
-        <div className="text-center my-8">
-          <h3 className="text-2xl font-semibold text-blue-700 mb-4">Zones d'Intervention</h3>
-          <p className="text-lg text-gray-700">
-            Nous intervenons à Senlis et dans les principales villes de la région de l’Oise : Noyon, Clermont, Compiègne, et au-delà.
-            Des frais de déplacement s'appliquent au-delà de 20 km.
-          </p>
-        </div>
-
-        {/* Conclusion */}
-        <div className="text-center mt-8">
-          <p className="text-lg text-gray-700 font-semibold">
-            Has Tech Services : Des solutions informatiques fiables et accessibles pour simplifier votre quotidien.
-          </p>
-        </div>
+        {/* Reste du contenu */}
       </div>
     </section>
   );
