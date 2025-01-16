@@ -1,0 +1,60 @@
+.creation-sites {
+    padding: 20px;
+    background-color: #f4f7fb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .creation-sites h1, .creation-sites h2 {
+    color: #1e3a8a;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .creation-sites h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .creation-sites h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .creation-sites p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .creation-sites img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .creation-sites button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .creation-sites button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  @media (max-width: 768px) {
+    .creation-sites img {
+      width: 100% !important;
+      margin: 20px 0;
+    }
+  }
+  

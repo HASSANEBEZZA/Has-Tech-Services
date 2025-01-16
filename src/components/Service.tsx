@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
           {/* Service 2 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-            <Link to="/network-setup"> {/* Ceci est la route vers NetworkServices */}
+            <Link to="/network-setup"> 
               <img
                 src="https://i.imgur.com/CA5GfO9.png"
                 alt="Illustration de configuration réseau"
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
 
           {/* Autres services */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-            <Link to="/support-training">
+          <Link to="/assistance-formation"> 
               <img
                 src="https://i.imgur.com/rwPFjn7.png"
                 alt="Illustration d'assistance et formation"
@@ -79,7 +79,7 @@ const Services: React.FC = () => {
           </div>
 
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-            <Link to="/web-creation">
+          <Link to="/creation-sites-accompagnement"> 
               <img
                 src="https://i.imgur.com/VXbIgDJ.png"
                 alt="Illustration de création de sites web"
@@ -87,7 +87,7 @@ const Services: React.FC = () => {
               />
             </Link>
             <h3 className="text-xl font-semibold text-center">
-              <Link to="/web-creation">Création de Sites Web et Accompagnement Digital</Link>
+              <Link to="/creation-sites-accompagnement">Création de Sites Web et Accompagnement Digital</Link>
             </h3>
             <ul className="list-disc list-inside text-gray-700">
               <li>Conception de sites vitrines pour entreprises ou particuliers.</li>
