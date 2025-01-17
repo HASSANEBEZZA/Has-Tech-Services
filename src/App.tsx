@@ -10,6 +10,7 @@ import RepairInfo from './components/RepairInfo';
 import NetworkServices from './components/NetworkServices';
 import AssistanceFormation from './components/AssistanceFormation';
 import CreationSitesAccompagnement from './components/CreationSitesAccompagnement'; 
+import Tarifs from './pages/Tarifs'; 
 
 const HomePage: React.FC = () => {
   return (
@@ -59,7 +60,10 @@ const App: React.FC = () => {
             <Route path="/assistance-formation" element={<AssistanceFormation />} />
 
             {/* Page Création de Sites Web et Accompagnement Digital */}
-            <Route path="/creation-sites-accompagnement" element={<CreationSitesAccompagnement />} /> 
+            <Route path="/creation-sites-accompagnement" element={<CreationSitesAccompagnement />} />
+
+            {/* Page Tarifs */}
+            <Route path="/tarifs" element={<Tarifs />} /> 
           </Routes>
         </main>
         

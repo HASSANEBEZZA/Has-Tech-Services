@@ -1,0 +1,89 @@
+.tarifs {
+    padding: 20px;
+    background-color: #f4f7fb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tarifs h1, .tarifs h2 {
+    color: #1e3a8a;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tarifs h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tarifs p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  /* Tableau des tarifs */
+  .tarifs-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #1e3a8a;
+    color: white;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f1f5f9;
+  }
+  
+  /* Images dans le tableau */
+  .image-small {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bouton de contact */
+  .btn-contact {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-contact:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.9rem;
+    }
+  
+    .image-small {
+      width: 60px;
+    }
+  }
+  

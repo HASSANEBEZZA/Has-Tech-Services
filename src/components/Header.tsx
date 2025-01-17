@@ -67,6 +67,11 @@ const Header: React.FC = () => {
                 Contact
               </ScrollLink>
             </li>
+            <li>
+              <Link to="/tarifs" className="text-white hover:text-gray-300 cursor-pointer">
+                Tarifs
+              </Link>
+            </li> {/* ✅ Ajout du lien vers la page Tarifs */}
           </ul>
         </nav>
       </div>
