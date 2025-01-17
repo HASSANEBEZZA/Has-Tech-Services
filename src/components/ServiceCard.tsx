@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './service-card'; 
 interface ServiceCardProps {
   name: string;
   description: string;
@@ -15,5 +15,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ name, description, price }) =
     </div>
   );
 };
+
+
 
 export default ServiceCard;

@@ -1,42 +1,77 @@
 .creation-sites {
-  padding: 20px;
+  padding: 40px;
   background-color: #f4f7fb;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  max-width: 1200px;
+  margin: auto;
 
-.creation-sites h1, .creation-sites h2 {
-  color: #1e3a8a;
-  font-family: 'Arial', sans-serif;
-}
+  h1 {
+    color: #1e3a8a;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
 
-.creation-sites h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
+  h2 {
+    color: #1e3a8a;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
 
-.creation-sites h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
 
-.creation-sites p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #333;
-}
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: semi-bold;
+  }
 
-.image-small {
-  display: block;
-  width: 30%;  
-  height: auto;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
 
-@media (max-width: 768px) {
   .image-small {
-    width: 100%; 
+    display: block;
+    width: 60%;  /* Augmentation de la taille de l'image */
+    max-width: 800px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1024px) {
+    .image-small {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .image-small {
+      width: 90%; /* Pleine largeur pour mobile */
+    }
   }
 }

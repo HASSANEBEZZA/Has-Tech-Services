@@ -20,7 +20,7 @@ const CreationSitesAccompagnement: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-4">Conception de sites vitrines</h2>
         <p className="text-lg text-gray-700 mb-4">
           Nous créons des sites vitrines professionnels pour les entreprises ou les particuliers. Notre approche est personnalisée pour chaque projet afin de garantir que votre site reflète parfaitement l'image de votre entreprise et répond à vos besoins spécifiques.
-        </p>
+        </p>  
         <img
           src="https://i.imgur.com/4uuCkvg.jpg"
           alt="Conception de sites vitrines"

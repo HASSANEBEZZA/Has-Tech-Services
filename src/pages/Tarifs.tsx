@@ -72,7 +72,7 @@ const Tarifs: React.FC = () => {
     {/* Téléphone */}
     <div className="contact-item">
       <FaPhoneAlt size={24} className="icon" />
-      <p className="text-lg text-gray-700">+33 1 23 45 67 89</p>
+      <p className="text-lg text-gray-700">+33 7 76 11 68 96</p>
     </div>
 
     {/* Email */}
