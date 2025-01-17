@@ -39,7 +39,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div>
-        {/* Barre supérieure et en-tête */}
+        {/* Barre haut de la page et en-tête */}
         <TopBar />
         <Header />
         

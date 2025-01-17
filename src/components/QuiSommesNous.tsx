@@ -64,7 +64,7 @@ const QuiSommesNous: React.FC = () => {
             Notre objectif est de vous offrir des solutions clés en main, adaptées à vos attentes et à vos ambitions.
           </p>
 
-          {/* Ajout de la deuxième image vers la fin */}
+          
           <div className="image-container mt-8 text-center">
             <img 
               src="https://i.imgur.com/iI8DfBz.png" 

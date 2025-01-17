@@ -3,7 +3,7 @@ import React from 'react';
 interface ServiceCardProps {
   name: string;
   description: string;
-  price: number; // le Changement de  'string' en 'number' pour plus de flexibilité
+  price: number; //  Changement de  'string' en 'number' pour plus de flexibilité
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ name, description, price }) => {

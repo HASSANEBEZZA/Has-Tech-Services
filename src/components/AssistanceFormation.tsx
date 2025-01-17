@@ -20,7 +20,7 @@ const AssistanceFormation: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Assistance technique</h2>
         <p className="text-lg text-gray-700 mb-4">
-          Je propose une assistance technique pour résoudre vos problèmes informatiques, que ce soit à distance ou directement sur site. Que vous rencontriez des soucis logiciels, matériels ou réseau, je suis là pour vous aider à trouver des solutions rapides et efficaces.
+        On propose une assistance technique pour résoudre vos problèmes informatiques, que ce soit à distance ou directement sur site. Que vous rencontrez des soucis logiciels, matériels ou réseau, on est là pour vous aider à trouver des solutions rapides et efficaces.
         </p>
         <img
           src="https://i.imgur.com/cka8WlV.jpeg"
@@ -33,7 +33,7 @@ const AssistanceFormation: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Formation personnalisée</h2>
         <p className="text-lg text-gray-700 mb-4">
-          Apprenez à utiliser les outils informatiques grâce à une formation personnalisée. Je vous accompagne dans la prise en main de votre ordinateur, l’utilisation d’Internet et d’autres logiciels essentiels pour vos besoins quotidiens ou professionnels.
+        Apprenez à utiliser les outils informatiques grâce à une formation personnalisée. On vous accompagne dans la prise en main de votre ordinateur, l'utilisation d'Internet et d'autres logiciels essentiels pour vos besoins quotidiens ou professionnels.
         </p>
         <img
           src="https://i.imgur.com/fBmtjqU.jpeg"
@@ -46,7 +46,7 @@ const AssistanceFormation: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Utilisation d'Internet</h2>
         <p className="text-lg text-gray-700 mb-4">
-          Découvrez comment naviguer sur Internet en toute sécurité, gérer vos emails, utiliser les moteurs de recherche efficacement et bien plus encore. Je vous aide à maîtriser ces compétences essentielles pour rester connecté au monde numérique.
+        Découvrez comment naviguer sur Internet en toute sécurité, gérez vos emails, utilisez les moteurs de recherche efficacement et bien plus encore. On vous aide à maîtriser ces compétences essentielles pour rester connecté au monde numérique.
         </p>
         <img
           src="https://i.imgur.com/Nk3nu9i.jpeg"
@@ -59,7 +59,7 @@ const AssistanceFormation: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Sécurité informatique</h2>
         <p className="text-lg text-gray-700 mb-4">
-          Apprenez les bases de la sécurité informatique pour protéger vos données personnelles et professionnelles. Je vous accompagne pour comprendre les bonnes pratiques, telles que la gestion des mots de passe, la détection des emails frauduleux et la protection de votre réseau.
+        Apprenez les bases de la sécurité informatique pour protéger vos données personnelles et professionnelles. On vous accompagne pour comprendre les bonnes pratiques, telles que la gestion des mots de passe, la détection des emails frauduleux et la protection de votre réseau.
         </p>
         <img
           src="https://i.imgur.com/is88Oik.jpeg"
