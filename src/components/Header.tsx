@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import logo from './logo.svg';
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +11,16 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="header bg-blue-700 text-white py-4 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <div className="logo-container">
-          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/" onClick={closeMenu}>
             <img src={logo} alt="Has Tech Services Logo" className="logo w-32 h-auto" />
           </Link>
         </div>
@@ -27,13 +32,11 @@ const Header: React.FC = () => {
 
         {/* Navigation menu */}
         <nav
-          className={`nav-links md:flex md:items-center md:justify-center ${
-            isMenuOpen ? 'block' : 'hidden'
-          } md:block absolute md:relative top-0 left-0 w-full bg-blue-700 bg-opacity-90 md:bg-transparent`}
+          className={`nav-links ${isMenuOpen ? 'block' : 'hidden'} md:flex md:items-center md:justify-center md:block`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-8 items-center space-y-6 md:space-y-0 text-lg">
             <li>
-              <Link to="/" className="text-white hover:text-gray-300 cursor-pointer">
+              <Link to="/" className="text-white hover:text-gray-300 cursor-pointer" onClick={closeMenu}>
                 Accueil
               </Link>
             </li>
@@ -43,6 +46,7 @@ const Header: React.FC = () => {
                 smooth={true}
                 duration={500}
                 className="text-white hover:text-gray-300 cursor-pointer"
+                onClick={closeMenu}
               >
                 Qui sommes-nous
               </ScrollLink>
@@ -53,6 +57,7 @@ const Header: React.FC = () => {
                 smooth={true}
                 duration={500}
                 className="text-white hover:text-gray-300 cursor-pointer"
+                onClick={closeMenu}
               >
                 Services
               </ScrollLink>
@@ -63,15 +68,16 @@ const Header: React.FC = () => {
                 smooth={true}
                 duration={500}
                 className="text-white hover:text-gray-300 cursor-pointer"
+                onClick={closeMenu}
               >
                 Contact
               </ScrollLink>
             </li>
             <li>
-              <Link to="/tarifs" className="text-white hover:text-gray-300 cursor-pointer">
+              <Link to="/tarifs" className="text-white hover:text-gray-300 cursor-pointer" onClick={closeMenu}>
                 Tarifs
               </Link>
-            </li> {/* ✅ Ajout du lien vers la page Tarifs */}
+            </li>
           </ul>
         </nav>
       </div>
