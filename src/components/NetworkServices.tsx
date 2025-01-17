@@ -34,7 +34,7 @@ const NetworkServices: React.FC = () => {
         On crée des réseaux locaux (LAN) adaptés à vos besoins, que ce soit pour un bureau ou une maison. Que ce soit pour une petite entreprise ou un réseau domestique complexe, on vous accompagne pour établir une infrastructure performante et sécurisée.
         </p>
         <img
-          src="https://i.imgur.com/wltfMpI.jpeg/UKMUQY4.jpeg" 
+          src="https://i.imgur.com/Ob8PiW0.jpg/600x400" 
           alt="Création réseaux locaux"
         />
       </section>
@@ -45,7 +45,7 @@ const NetworkServices: React.FC = () => {
         Améliorez la portée et la performance de votre réseau Wi-Fi. On propose des solutions pour optimiser votre signal Wi-Fi et garantir une couverture homogène dans toute votre maison ou bureau, tout en assurant une connexion stable pour tous vos appareils.
         </p>
         <img
-          src="https://i.imgur.com/UKMUQY4.jpeg" 
+          src="https://i.imgur.com/jsPv7hL.jpg/600x400" 
           alt="Optimisation réseaux Wi-Fi"
         />
       </section>
@@ -56,7 +56,7 @@ const NetworkServices: React.FC = () => {
         On s'assure que votre réseau est protégé contre les menaces extérieures en configurant des pare-feu, des protocoles de sécurité avancés et des réseaux privés virtuels (VPN), pour une sécurité renforcée de vos données et de vos connexions.
         </p>
         <img
-          src="https://i.imgur.com/TmTOkwi.jpeg/600x400" 
+          src="https://i.imgur.com/Yj7bY2y.jpg/600x400" 
           alt="Sécurisation des réseaux"
         />
       </section>
@@ -67,7 +67,7 @@ const NetworkServices: React.FC = () => {
         On vous aide à gérer vos adresses IP et à installer un câblage Ethernet propre et performant, permettant une communication rapide et stable entre vos équipements.
         </p>
         <img
-          src="https://i.imgur.com/sfxziRb.jpeg/600x400" 
+          src="https://i.imgur.com/G513vIt.jpg/600x400" 
           alt="Gestion IP et câblage Ethernet"
         />
       </section>
