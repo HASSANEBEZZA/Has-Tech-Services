@@ -61,26 +61,28 @@ const Tarifs: React.FC = () => {
       </div>
 
       
-      <div className="text-center mt-12">
-        <p className="text-lg text-gray-700 mb-4">
-          Pour toute demande spécifique ou devis personnalisé, contactez-nous directement :
-        </p>
+{/* Section Contact  */}
+<div className="text-center mt-12">
+  <p className="text-lg text-gray-700 mb-4">
+    Pour toute demande spécifique ou devis personnalisé, contactez-nous directement :
+  </p>
 
-       
-        <div className="flex justify-center space-x-8">
-          {/* Téléphone */}
-          <div className="flex items-center space-x-2">
-            <FaPhoneAlt size={24} className="text-blue-700" />
-            <p className="text-lg text-gray-700">07 76 11 68 96</p>
-          </div>
+  {/* Informations de contact avec icônes */}
+  <div className="contact-info">
+    {/* Téléphone */}
+    <div className="contact-item">
+      <FaPhoneAlt size={24} className="icon" />
+      <p className="text-lg text-gray-700">+33 1 23 45 67 89</p>
+    </div>
 
-          {/* Email */}
-          <div className="flex items-center space-x-2">
-            <FaEnvelope size={24} className="text-blue-700" />
-            <p className="text-lg text-gray-700">contact@hastech.com</p>
-          </div>
-        </div>
-      </div>
+    {/* Email */}
+    <div className="contact-item">
+      <FaEnvelope size={24} className="icon" />
+      <p className="text-lg text-gray-700">contact@hastech.com</p>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
