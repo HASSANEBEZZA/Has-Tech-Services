@@ -78,7 +78,7 @@ const Tarifs: React.FC = () => {
     {/* Email */}
     <div className="contact-item">
       <FaEnvelope size={24} className="icon" />
-      <p className="text-lg text-gray-700">contact@hastech.com</p>
+      <p className="text-lg text-gray-700">contact@has-tech-services.fr</p>
     </div>
   </div>
 </div>

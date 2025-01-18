@@ -10,7 +10,7 @@ const TopBar: React.FC = () => {
         <div className="top-bar-item">
           <FaPhoneAlt className="icon" />
           <span>
-            Appelez-nous : <strong>07 76 11 68 96</strong> 
+            Appelez-nous : <strong>+33 7 76 11 68 96</strong> 
           </span>
         </div>
 
@@ -18,7 +18,7 @@ const TopBar: React.FC = () => {
         <div className="top-bar-item">
           <FaClock className="icon" />
           <span>
-            Horaires : <strong>Lun/Dim : 08:00 - 19:00</strong>
+            Horaires : <strong>Lundi/Dimanche : 08:00 - 19:00</strong>
           </span>
         </div>
 
@@ -26,7 +26,7 @@ const TopBar: React.FC = () => {
         <div className="top-bar-item">
           <FaEnvelope className="icon" />
           <span>
-            <a href="mailto:support@has-tech.com">support@has-tech.com</a>
+            <a href="mailto:contact@has-tech-services.fr">contact@has-tech-services.fr</a>
           </span>
         </div>
       </div>
