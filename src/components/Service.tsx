@@ -26,7 +26,7 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/repair-info">
               <img
-                src="https://i.imgur.com/wzvo6pu.png"
+                src="https://i.imgur.com/iyDUQHl.jpg"
                 alt="Illustration de dépannage informatique"
                 className="w-full h-64 object-contain mb-4"
               />
@@ -45,13 +45,13 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/network-setup"> 
               <img
-                src="https://i.imgur.com/CA5GfO9.png"
+                src="https://i.imgur.com/B1i4E4i.jpg"
                 alt="Illustration de configuration réseau"
                 className="w-full h-64 object-contain mb-4"
               />
             </Link>
             <h3 className="text-xl font-semibold text-center">
-              <Link to="/network-setup">Installation et Configuration Réseau</Link> {/* Lien vers la page NetworkServices */}
+              <Link to="/network-setup">Installation et Configuration Réseau</Link> 
             </h3>
             <ul className="list-disc list-inside text-gray-700">
               <li>Installation de routeurs, switchs, et câblage Ethernet.</li>
@@ -60,11 +60,11 @@ const Services: React.FC = () => {
             </ul>
           </div>
 
-          {/* Autres services */}
+          {/* services 3 et 4 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
           <Link to="/assistance-formation"> 
               <img
-                src="https://i.imgur.com/rwPFjn7.png"
+                src="https://i.imgur.com/210jWw2.jpg"
                 alt="Illustration d'assistance et formation"
                 className="w-full h-64 object-contain mb-4"
               />
@@ -81,7 +81,7 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
           <Link to="/creation-sites-accompagnement"> 
               <img
-                src="https://i.imgur.com/VXbIgDJ.png"
+                src="https://i.imgur.com/uBRUIKF.jpeg"
                 alt="Illustration de création de sites web"
                 className="w-full h-64 object-contain mb-4"
               />
