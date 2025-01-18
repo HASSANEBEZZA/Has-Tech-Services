@@ -1,34 +1,40 @@
-const sendEmail = require('../config/emailService'); 
+const sendEmail = require('../config/emailService');
+const dotenv = require('dotenv');
+
+// Charger les variables d'environnement
+dotenv.config();
 
 const sendEmailController = async (req, res) => {
   const { name, email, message } = req.body;
 
-  
+  // Vérification des champs
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Tous les champs sont requis.' });
   }
 
   try {
-    // Appel de la fonction d'envoi d'email
+    
+    const emailDestinataire = process.env.EMAIL_DESTINATAIRE;
+    const subjectPrefix = process.env.EMAIL_SUBJECT_PREFIX || 'Nouveau message de';
+
+    
     const result = await sendEmail({
-      to: 'support@has-tech.com',
-      subject: `Nouveau message de ${name}`,
+      to: emailDestinataire, 
+      subject: `${subjectPrefix} ${name}`, 
       text: `De : ${name} <${email}>\n\nMessage:\n${message}`,
       html: `<p><strong>De :</strong> ${name} &lt;${email}&gt;</p><p><strong>Message :</strong></p><p>${message}</p>`,
     });
 
-    // Vérifier si l'email a été envoyé avec succès
+    // Vérification de l'envoi de l'email
     if (result.success) {
       return res.status(200).json({ message: 'Email envoyé avec succès.' });
     } else {
       return res.status(500).json({ error: 'Erreur lors de l\'envoi de l\'email.' });
     }
   } catch (error) {
-    // Gestion des erreurs lors de l'envoi de l'email
-    console.error('Erreur lors de l\'envoi de l\'email :', error);
+    // Gestion des erreurs
     res.status(500).json({ error: 'Erreur serveur.' });
   }
 };
-
 
 module.exports = { sendEmailController };
