@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
           {/* Service 2 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-            <Link to="/network-setup"> 
+            <Link to="/network-setup">
               <img
                 src="https://i.imgur.com/B1i4E4i.jpg"
                 alt="Illustration de configuration réseau"
@@ -51,7 +51,7 @@ const Services: React.FC = () => {
               />
             </Link>
             <h3 className="text-xl font-semibold text-center">
-              <Link to="/network-setup">Installation et Configuration Réseau</Link> 
+              <Link to="/network-setup">Installation et Configuration Réseau</Link>
             </h3>
             <ul className="list-disc list-inside text-gray-700">
               <li>Installation de routeurs, switchs, et câblage Ethernet.</li>
@@ -60,9 +60,9 @@ const Services: React.FC = () => {
             </ul>
           </div>
 
-          {/* services 3 et 4 */}
+          {/* Service 3 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-          <Link to="/assistance-formation"> 
+            <Link to="/assistance-formation">
               <img
                 src="https://i.imgur.com/210jWw2.jpg"
                 alt="Illustration d'assistance et formation"
@@ -78,8 +78,9 @@ const Services: React.FC = () => {
             </ul>
           </div>
 
+          {/* Service 4 */}
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
-          <Link to="/creation-sites-accompagnement"> 
+            <Link to="/creation-sites-accompagnement">
               <img
                 src="https://i.imgur.com/uBRUIKF.jpeg"
                 alt="Illustration de création de sites web"
@@ -96,7 +97,12 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        {/* Reste du contenu */}
+        {/* Bande horizontale pour le lien */}
+        <div className="w-full bg-gray-200 py-6 mt-12 text-center">
+          <Link to="/tarifs" className="text-blue-700 text-lg font-semibold hover:underline">
+            Voir nos tarifs de prestation
+          </Link>
+        </div>
       </div>
     </section>
   );
