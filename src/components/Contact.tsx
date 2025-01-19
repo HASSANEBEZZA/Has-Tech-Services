@@ -18,7 +18,8 @@ const Contact: React.FC = () => {
     setErrorMessage('');
 
     try {
-      const response = await axios.post('http://localhost:3002/api/services/send-email', formData);
+      // Modifier l'URL de la requête pour correspondre à la route correcte du backend
+      const response = await axios.post('https://has-tech-service-backend-jfkkg4ko8-hassans-projects-8717d6cc.vercel.app/api/services/send-email', formData);
       if (response.status === 200) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
