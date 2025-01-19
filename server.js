@@ -11,10 +11,10 @@ dotenv.config();
 const app = express();
 
 // Configurer CORS pour accepter les requêtes des origines spécifiques
-const allowedOrigins = [
+const allowedOrigins = process.env.NODE_ENV === 'production' ? [
   'https://has-tech-service.vercel.app',  // Frontend sur Vercel
   'https://www.has-tech-services.fr',     // Ton domaine de production
-];
+] : ['http://localhost:3000'];             // Frontend en local (par exemple)
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -24,8 +24,10 @@ const corsOptions = {
       callback(new Error('CORS not allowed')); // Refuser l'origine
     }
   },
-  methods: ['GET', 'POST'],
+  methods: ['GET', 'POST', 'OPTIONS'],  // Ajout de la méthode OPTIONS pour gérer la pré-vérification
   allowedHeaders: ['Content-Type', 'Authorization'],
+  preflightContinue: false, // Important pour permettre le traitement de la pré-vérification
+  optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));  // Activer CORS avec les options personnalisées
