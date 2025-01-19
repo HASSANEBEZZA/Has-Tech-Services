@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; 
 import '../components/SocialMedia.scss';
 
 const Contact: React.FC = () => {
@@ -18,9 +18,8 @@ const Contact: React.FC = () => {
     setErrorMessage('');
 
     try {
-      // Utilisation de la variable d'environnement pour l'URL
-      const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/send-email`, formData);
-
+      // Modifier l'URL de la requête pour correspondre à la route correcte du backend
+      const response = await axios.post('has-tech-service-backend-bpc3bs9nm-hassans-projects-8717d6cc.vercel.app/api/contact', formData);
       if (response.status === 200) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
@@ -69,7 +68,6 @@ const Contact: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  // Vérification email
               />
             </div>
             <div>
