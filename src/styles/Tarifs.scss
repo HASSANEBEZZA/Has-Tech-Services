@@ -1,136 +1,81 @@
 .tarifs {
-    padding: 20px;
-    background-color: #f4f7fb;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tarifs h1, .tarifs h2 {
-    color: #1e3a8a;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .tarifs h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .tarifs p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #333;
-  }
-  
-  /* Tableau des tarifs */
-  .tarifs-table {
-    width: 100%;
-    overflow-x: auto;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+  padding: 20px;
+  background-color: #f4f7fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarifs h1, .tarifs h2 {
+  color: #1e3a8a;
+  font-family: 'Arial', sans-serif;
+}
+
+.tarifs h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tarifs p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Tableau des tarifs */
+.tarifs-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+}
+
+.image-small {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   th, td {
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    font-size: 0.9rem;
   }
-  
-  th {
-    background-color: #1e3a8a;
-    color: white;
-    font-weight: bold;
-  }
-  
-  tr:hover {
-    background-color: #f1f5f9;
-  }
-  
-  /* Images dans le tableau */
+
   .image-small {
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60px;
   }
-  
-  /* Responsive : Contact */
+
   .contact-info {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap; 
   }
-  
-  .contact-info .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .contact-info .contact-item p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  /* Styles spécifiques pour les icônes */
+
   .contact-info .icon {
-    font-size: 24px;
-    color: #1e3a8a; 
+    font-size: 20px;
   }
-  
- 
-  .btn-contact {
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    background-color: #1e3a8a;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-contact:hover {
-    background-color: #1d4ed8;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    table {
-      font-size: 0.9rem;
-    }
-  
-    .image-small {
-      width: 60px;
-    }
-  
-  
-    .contact-info {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    
-    .contact-info .contact-item {
-      margin-bottom: 0.8rem;
-    }
-  
-    
-    .contact-info .icon {
-      font-size: 20px;
-    }
-  
-    .contact-info .contact-item p {
-      font-size: 1rem;
-    }
-  }
-  
+}
