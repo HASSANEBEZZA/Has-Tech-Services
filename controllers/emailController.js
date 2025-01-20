@@ -1,4 +1,4 @@
-const sendEmail = require('../config/emailService');
+const sendEmail = require('../config/emailService'); // Assurez-vous du chemin d'importation
 const dotenv = require('dotenv');
 
 // Charger les variables d'environnement
@@ -13,11 +13,10 @@ const sendEmailController = async (req, res) => {
   }
 
   try {
-    
     const emailDestinataire = process.env.EMAIL_DESTINATAIRE;
     const subjectPrefix = process.env.EMAIL_SUBJECT_PREFIX || 'Nouveau message de';
 
-    
+    // Appel du service pour envoyer l'email
     const result = await sendEmail({
       to: emailDestinataire, 
       subject: `${subjectPrefix} ${name}`, 
@@ -33,6 +32,7 @@ const sendEmailController = async (req, res) => {
     }
   } catch (error) {
     // Gestion des erreurs
+    console.error('Erreur serveur:', error.message);
     res.status(500).json({ error: 'Erreur serveur.' });
   }
 };

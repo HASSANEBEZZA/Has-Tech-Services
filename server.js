@@ -17,8 +17,9 @@ app.use(cors()); // Activer les CORS
 // Routes
 app.use('/api/contact', contactRoutes); // Routes pour le formulaire de contact
 
-// Démarrer le serveur
-const PORT = process.env.PORT || 3002;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// La fonction handler qui sera exportée pour Vercel
+module.exports = (req, res) => {
+  // Vous pouvez définir un handler par méthode HTTP si nécessaire
+  // Par exemple, ici on gère les méthodes POST pour l'API de contact
+  app(req, res);
+};
