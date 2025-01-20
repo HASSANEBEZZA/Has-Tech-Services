@@ -7,11 +7,13 @@ dotenv.config();
 
 const app = express();
 
-// Configuration CORS
+// Configuration CORS avec une méthode plus large
 const corsOptions = {
   origin: 'https://www.has-tech-services.fr', // Le domaine autorisé
-  methods: ['GET', 'POST'], // Méthodes autorisées
-  allowedHeaders: ['Content-Type'], // En-têtes autorisés
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+  preflightContinue: true, // Passer la requête de pré-vol
+  optionsSuccessStatus: 204 // Utiliser un code de statut 204 pour les requêtes pré-vol réussies
 };
 
 app.use(cors(corsOptions));  // Appliquer CORS au serveur
@@ -23,13 +25,11 @@ app.use(express.json());
 app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
-  // Vérification des champs
   if (!name || !email || !message) {
     return res.status(400).json({ success: false, error: 'Tous les champs sont requis.' });
   }
 
   try {
-    // Envoi d'email
     const response = await sendEmail({
       to: process.env.MAIL_FROM,
       subject: 'Nouveau message de contact',
@@ -48,7 +48,6 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// Lancer le serveur sur Vercel
 module.exports = (req, res) => {
   app(req, res);
 };
