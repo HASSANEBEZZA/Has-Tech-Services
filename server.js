@@ -17,9 +17,7 @@ app.use(cors()); // Activer les CORS
 // Routes
 app.use('/api/contact', contactRoutes); // Routes pour le formulaire de contact
 
-// La fonction handler qui sera exportée pour Vercel
+// Fonction handler qui sera utilisée pour Vercel
 module.exports = (req, res) => {
-  // Vous pouvez définir un handler par méthode HTTP si nécessaire
-  // Par exemple, ici on gère les méthodes POST pour l'API de contact
-  app(req, res);
+  app(req, res); // Appelle Express pour gérer les requêtes
 };
