@@ -7,21 +7,25 @@ dotenv.config();
 
 const app = express();
 
-// Configuration CORS avec une méthode plus large
+
 const corsOptions = {
-  origin: 'https://www.has-tech-services.fr', // Le domaine autorisé
-  methods: ['GET', 'POST'],
+  origin: 'https://www.has-tech-services.fr', 
+  methods: ['GET', 'POST', 'OPTIONS'], 
   allowedHeaders: ['Content-Type'],
-  preflightContinue: true, // Passer la requête de pré-vol
-  optionsSuccessStatus: 204 // Utiliser un code de statut 204 pour les requêtes pré-vol réussies
+  preflightContinue: false,
+  optionsSuccessStatus: 204 
 };
 
-app.use(cors(corsOptions));  // Appliquer CORS au serveur
 
-// Middleware pour analyser les requêtes JSON
+app.use(cors(corsOptions));
+
+
 app.use(express.json());
 
-// Route pour le formulaire de contact
+
+app.options('/api/contact', cors(corsOptions)); 
+
+
 app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -43,7 +47,7 @@ app.post('/api/contact', async (req, res) => {
       throw new Error('Erreur inconnue lors de l\'envoi de l\'email.');
     }
   } catch (error) {
-    console.error('Erreur:', error.message);
+    
     res.status(500).json({ success: false, error: error.message });
   }
 });

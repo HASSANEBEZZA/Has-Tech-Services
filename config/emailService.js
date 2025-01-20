@@ -1,12 +1,12 @@
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 
-// Charger les variables d'environnement
+//  variables d'environnement
 dotenv.config();
 
 const sendEmail = async ({ to, subject, text, html }) => {
   try {
-    // Vérifier si toutes les variables nécessaires sont présentes
+
     const requiredEnvVars = [
       'SMTP_HOST',
       'SMTP_PORT',
@@ -22,11 +22,11 @@ const sendEmail = async ({ to, subject, text, html }) => {
       }
     });
 
-    // Créer le transporteur Nodemailer
+    //  transporteur Nodemailer
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT, 10),
-      secure: process.env.SMTP_SECURE === 'true',  // True pour SSL/TLS
+      secure: process.env.SMTP_SECURE === 'true',  
       auth: {
         user: process.env.LWS_EMAIL_USERNAME,
         pass: process.env.LWS_EMAIL_PASSWORD,
@@ -45,10 +45,10 @@ const sendEmail = async ({ to, subject, text, html }) => {
     // Envoi de l'email
     const info = await transporter.sendMail(mailOptions);
 
-    console.log(`Email envoyé : ${info.messageId}`);
+
     return { success: true, messageId: info.messageId };
   } catch (error) {
-    console.error('Erreur lors de l\'envoi de l\'email :', error.message);
+
     return { success: false, error: error.message };
   }
 };
