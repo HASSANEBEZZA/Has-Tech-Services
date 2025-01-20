@@ -17,24 +17,24 @@ const Contact: React.FC = () => {
     setStatus('loading');
     setErrorMessage('');
 
-    console.log('Form submitted with data:', formData); // Log the form data being submitted
+   
 
     try {
       const response = await axios.post('https://has-tech-service-backend-bpc3bs9nm-hassans-projects-8717d6cc.vercel.app/api/contact', formData);
       
-      console.log('Response received:', response); // Log the response from the server
+      
 
       if (response.status === 200) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
-        console.log('Form submitted successfully'); // Log success
+       
       }
     } catch (error: any) {
       setStatus('error');
       setErrorMessage(
         error.response?.data?.error || "Une erreur s'est produite lors de l'envoi de l'email."
       );
-      console.error('Error occurred during form submission:', error); // Log the error message
+  
     }
   };
 
