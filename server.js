@@ -10,14 +10,22 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
-app.use(express.json()); // Pour analyser les requêtes JSON
-app.use(cors()); // Activer les CORS
+// Middleware pour autoriser CORS depuis le domaine spécifique
+const corsOptions = {
+  origin: 'https://www.has-tech-services.fr', // Spécifier le domaine autorisé
+  methods: 'GET,POST', // Spécifier les méthodes autorisées
+  allowedHeaders: 'Content-Type', // Spécifier les en-têtes autorisés
+};
+
+app.use(cors(corsOptions)); // Appliquer CORS avec les options
+
+// Middleware pour analyser les requêtes JSON
+app.use(express.json());
 
 // Routes
 app.use('/api/contact', contactRoutes); // Routes pour le formulaire de contact
 
-// Fonction handler qui sera utilisée pour Vercel
+// La fonction handler qui sera exportée pour Vercel
 module.exports = (req, res) => {
-  app(req, res); // Appelle Express pour gérer les requêtes
+  app(req, res);
 };
