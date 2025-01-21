@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; 
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa';
 import '../components/SocialMedia.scss';
 
 const Contact: React.FC = () => {
@@ -17,24 +17,19 @@ const Contact: React.FC = () => {
     setStatus('loading');
     setErrorMessage('');
 
-   
-
     try {
-      const response = await axios.post('https://has-tech-service-backend-bpc3bs9nm-hassans-projects-8717d6cc.vercel.app/api/contact', formData);
-      
-      
+      // Modification de l'URL pour utiliser un chemin relatif
+      const response = await axios.post('/api/contact', formData);
 
       if (response.status === 200) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
-       
       }
     } catch (error: any) {
       setStatus('error');
       setErrorMessage(
         error.response?.data?.error || "Une erreur s'est produite lors de l'envoi de l'email."
       );
-  
     }
   };
 
