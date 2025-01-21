@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; 
 import '../components/SocialMedia.scss';
 
 const Contact: React.FC = () => {
@@ -18,9 +18,11 @@ const Contact: React.FC = () => {
     setErrorMessage('');
 
     try {
-      // Modification de l'URL pour utiliser un chemin relatif
-      const response = await axios.post('/api/contact', formData);
-
+      // URL du backend hébergé sur Railway
+      const response = await axios.post(
+        'https://serveur-dispose-de-services-technologiques.railway.internal/api/contact',
+        formData
+      );
       if (response.status === 200) {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
