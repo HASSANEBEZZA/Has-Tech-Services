@@ -9,8 +9,10 @@ import Services from './components/Service';
 import RepairInfo from './components/RepairInfo';
 import NetworkServices from './components/NetworkServices';
 import AssistanceFormation from './components/AssistanceFormation';
-import CreationSitesAccompagnement from './components/CreationSitesAccompagnement'; 
-import Tarifs from './pages/Tarifs'; 
+import CreationSitesAccompagnement from './components/CreationSitesAccompagnement';
+import Tarifs from './pages/Tarifs';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import MentionsLegales from './pages/MentionsLegales';
 
 const HomePage: React.FC = () => {
   return (
@@ -64,6 +66,12 @@ const App: React.FC = () => {
 
             {/* Page Tarifs */}
             <Route path="/tarifs" element={<Tarifs />} /> 
+            
+            {/* Page Politique de Confidentialité */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            
+            {/* Page Mentions Légales */}
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
         </main>
         

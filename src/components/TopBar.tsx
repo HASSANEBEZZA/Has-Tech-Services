@@ -10,7 +10,7 @@ const TopBar: React.FC = () => {
         <div className="top-bar-item">
           <FaPhoneAlt className="icon" />
           <span>
-            Appelez-nous : <strong>+33 7 76 11 68 96</strong> 
+            Appelez-nous : <strong>07 76 11 68 96</strong> 
           </span>
         </div>
 

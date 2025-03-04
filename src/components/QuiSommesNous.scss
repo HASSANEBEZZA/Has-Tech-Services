@@ -7,11 +7,11 @@
     text-align: center; /* Centrer le contenu à l'intérieur */
 
     iframe {
-      width: 100%; /* L'iframe prend toute la largeur du conteneur */
+      width: 100%; 
       height: auto;
-      aspect-ratio: 16 / 9; /* Assurer le ratio 16:9 pour les vidéos */
-      border-radius: 8px; /* Arrondir légèrement les coins */
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ajouter une ombre douce */
+      aspect-ratio: 16 / 9; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     }
   }
 

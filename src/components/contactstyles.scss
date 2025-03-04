@@ -1,0 +1,49 @@
+.contact-section {
+    background-color: #f3f4f6; // Couleur de fond gris clair
+  }
+  
+  .contact-section h2 {
+    color: #0b39e0; // Bleu clair pour le titre
+  }
+  
+  .form-container {
+    @apply p-12 shadow-lg rounded-lg max-w-5xl mx-auto space-y-8 bg-white; 
+  
+    input,
+    textarea {
+      @apply w-full px-6 py-4 border border-gray-300 rounded-lg text-xl;
+    }
+  
+    button {
+      @apply w-full py-3 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-600;
+    }
+  }
+  
+  .social-media-section {
+    background-color: #cccdcf; // Couleur de fond gris des icônes des réseaux sociaux
+  }
+  
+  // Couleur du titre dans la section des réseaux sociaux
+  .social-media-section h3 {
+    color: #0b0bf5; // Couleur bleue pour le titre des réseaux sociaux
+    transition: color 0.3s ease;
+  }
+  
+  // Changer la couleur des icônes des réseaux sociaux au survol
+  .social-media-section a {
+    transition: color 0.3s ease; // Ajout d'une transition pour le survol
+  }
+  
+  .social-media-section a:hover {
+    color: #0b0bf5; // Appliquer la couleur #0b0bf5 lors du survol
+  }
+  
+  .social-media-section a svg { 
+    fill: #0b0bf5; // Couleur initiale des icônes, à ajuster si nécessaire
+    transition: fill 0.3s ease; // Transition pour le changement de couleur
+  }
+  
+  .social-media-section a:hover svg {
+    fill: #7d7dfa; // Applique la couleur #0b0bf5 lors du survol sur les icônes
+  }
+  

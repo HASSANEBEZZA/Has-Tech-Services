@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa'; 
-import '../components/SocialMedia.scss';
+import '../components/contactstyles.scss'; 
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
+  const [isAccepted, setIsAccepted] = useState<boolean>(false); 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsAccepted(e.target.checked); 
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -18,7 +23,6 @@ const Contact: React.FC = () => {
     setErrorMessage('');
 
     try {
-      // URL du backend hébergé sur Railway
       const response = await axios.post(
         'https://serveur-dispose-de-services-technologiques.railway.internal/api/contact',
         formData
@@ -42,8 +46,8 @@ const Contact: React.FC = () => {
           <h2 className="text-5xl font-extrabold text-blue-700 mb-8">Contactez-nous</h2>
           <p className="text-xl text-gray-700 mb-10">
             Besoin d'assistance ? Contactez-nous via le formulaire ou par email à{' '}
-            <a href="mailto:support@has-tech.com" className="text-blue-500 underline">
-              support@has-tech.com
+            <a href="mailto:contact@has-tech-services.fr" className="text-blue-500 underline">
+            contact@has-tech-services.fr
             </a>
             .
           </p>
@@ -84,14 +88,34 @@ const Contact: React.FC = () => {
                 required
               ></textarea>
             </div>
+            
+            {/* Case à cocher pour la politique de confidentialité */}
+            <div className="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                checked={isAccepted}
+                onChange={handleCheckboxChange}
+                className="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-2 focus:ring-blue-300"
+                required
+              />
+              <label htmlFor="privacy-policy" className="text-sm text-gray-700">
+                J'accepte la{' '}
+                <a href="/politique-de-confidentialite" className="text-blue-500 underline">
+                  politique de confidentialité
+                </a>.
+              </label>
+            </div>
+
             <button
               type="submit"
-              className="w-full py-3 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-600 text-xl"
-              disabled={status === 'loading'}
+              className={`w-full py-3 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-600 text-xl ${!isAccepted ? 'opacity-50 cursor-not-allowed' : ''}`}
+              disabled={!isAccepted || status === 'loading'}
             >
               {status === 'loading' ? 'Envoi en cours...' : 'Envoyer'}
             </button>
           </form>
+
           {status === 'success' && (
             <p className="text-green-600 text-lg mt-4">Votre message a été envoyé avec succès !</p>
           )}
