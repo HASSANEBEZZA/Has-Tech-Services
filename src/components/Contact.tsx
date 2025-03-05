@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
         <div className="container mx-auto text-center px-6">
           <h2 className="text-5xl font-extrabold text-blue-700 mb-8">Contactez-nous</h2>
           <p className="text-xl text-gray-700 mb-10">
-            Besoin d'assistance ? Contactez-nous via le formulaire ou par email à {' '}
+            Besoin d'assistance ? Contactez-nous via le formulaire ou par email à{' '}
             <a href="mailto:contact@has-tech-services.fr" className="text-blue-500 underline">
               contact@has-tech-services.fr
             </a>.
@@ -104,7 +104,8 @@ const Contact: React.FC = () => {
                   onChange={handleCheckboxChange}
                   className="mr-2"
                 />
-                J'accepte la {' '}<a href="/privacy-policy" className="text-blue-500"> politique de confidentialité</a>.
+                J'accepte la&nbsp;
+                <a href="/privacy-policy" className="text-blue-500">politique de confidentialité</a>.
               </label>
               {privacyError && <p className="text-red-600 text-sm">{privacyError}</p>}
             </div>
