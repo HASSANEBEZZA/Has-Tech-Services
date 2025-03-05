@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
         {/* Message de copyright */}
         <div className="mt-6">
           <p className="text-gray-400 text-sm">
-            © 2016 - 2025. Tous droits réservés.
+            ©  2025. Tous droits réservés.
           </p>
         </div>
       </div>
