@@ -26,7 +26,7 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/repair-info">
               <img
-                src="https://i.imgur.com/iyDUQHl.jpg"
+                src="https://i.imgur.com/xWaLqBu.jpeg"
                 alt="Illustration de dépannage informatique"
                 className="w-full h-64 object-contain mb-4"
               />
@@ -45,7 +45,7 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/network-setup">
               <img
-                src="https://i.imgur.com/B1i4E4i.jpg"
+                src="https://i.imgur.com/5QShZ83.jpeg"
                 alt="Illustration de configuration réseau"
                 className="w-full h-64 object-contain mb-4"
               />
@@ -64,7 +64,7 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/assistance-formation">
               <img
-                src="https://i.imgur.com/210jWw2.jpg"
+                src="https://i.imgur.com/IdX3BM2.jpeg"
                 alt="Illustration d'assistance et formation"
                 className="w-full h-64 object-contain mb-4"
               />
@@ -82,7 +82,7 @@ const Services: React.FC = () => {
           <div className="service-card p-4 bg-white shadow-lg rounded-lg">
             <Link to="/creation-sites-accompagnement">
               <img
-                src="https://i.imgur.com/uBRUIKF.jpeg"
+                src="https://i.imgur.com/5PHul5a.jpeg"
                 alt="Illustration de création de sites web"
                 className="w-full h-64 object-contain mb-4"
               />
