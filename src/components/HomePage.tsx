@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import QuiSommesNous from './QuiSommesNous';
 import Services from './Service'; 
+import Tarifs from '../pages/Tarifs'; // Import du composant Tarifs
 import Contact from './Contact';
 import Footer from './Footer';
 import './HomePage.scss';
@@ -43,6 +44,11 @@ const HomePage: React.FC = () => {
         {/* Section Services */}
         <section id="services" className="py-16">
           <Services />
+        </section>
+
+        {/* Section Tarifs (Ajoutée ici) */}
+        <section id="tarifs" className="py-16 bg-gray-100">
+          <Tarifs />
         </section>
 
         {/* Section Contact */}

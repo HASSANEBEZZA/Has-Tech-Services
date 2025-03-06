@@ -27,10 +27,18 @@ const HomePage: React.FC = () => {
           </p>
         </div>
       </section>
+
       <section id="about-us" className="py-16 bg-gray-100">
         <QuiSommesNous />
       </section>
+
       <Services />
+
+      {/* Ajout de la section Tarifs ici */}
+      <section id="tarifs" className="py-16 bg-gray-100">
+        <Tarifs />
+      </section>
+
       <section id="contact" className="py-16 bg-gray-100">
         <Contact />
       </section>
@@ -42,35 +50,27 @@ const App: React.FC = () => {
   return (
     <Router>
       <div>
-        {/* Barre haut de la page et en-tête */}
+        {/* Barre du haut et en-tête */}
         <TopBar />
         <Header />
         
         {/* Contenu principal */}
         <main>
           <Routes>
-            {/* Page d'accueil */}
+            {/* Page d'accueil avec la section Tarifs incluse */}
             <Route path="/" element={<HomePage />} />
             
-            {/* Page des informations de réparation */}
+            {/* Pages individuelles */}
             <Route path="/repair-info" element={<RepairInfo />} />
-            
-            {/* Page Installation et Configuration Réseau */}
             <Route path="/network-setup" element={<NetworkServices />} />
-
-            {/* Page Assistance et Formation */}
             <Route path="/assistance-formation" element={<AssistanceFormation />} />
-
-            {/* Page Création de Sites Web et Accompagnement Digital */}
             <Route path="/creation-sites-accompagnement" element={<CreationSitesAccompagnement />} />
 
-            {/* Page Tarifs */}
+            {/* Page Tarifs (indépendante) */}
             <Route path="/tarifs" element={<Tarifs />} /> 
             
-            {/* Page Politique de Confidentialité */}
+            {/* Pages légales */}
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            
-            {/* Page Mentions Légales */}
             <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
         </main>
