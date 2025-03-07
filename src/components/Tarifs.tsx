@@ -17,7 +17,7 @@ const Tarifs: React.FC = () => {
       </h1>
 
       <p className="text-lg text-gray-700 text-center mb-8">
-        Voici nos tarifs pour les différentes prestations de notre micro-entreprise. Tous nos services sont réalisés avec professionnalisme et transparence.
+        Voici nos tarifs pour les différentes prestations de notre entreprise. Tous nos services sont réalisés avec professionnalisme et transparence.
       </p>
 
       <div className="tarifs-table">

@@ -10,9 +10,10 @@ import RepairInfo from './components/RepairInfo';
 import NetworkServices from './components/NetworkServices';
 import AssistanceFormation from './components/AssistanceFormation';
 import CreationSitesAccompagnement from './components/CreationSitesAccompagnement';
-import Tarifs from './pages/Tarifs';
+import Tarifs from './components/Tarifs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import MentionsLegales from './pages/MentionsLegales';
+import Avis from './components/Avis'; // Import du composant Avis
 
 const HomePage: React.FC = () => {
   return (
@@ -34,10 +35,18 @@ const HomePage: React.FC = () => {
 
       <Services />
 
+
+
       {/* Ajout de la section Tarifs ici */}
       <section id="tarifs" className="py-16 bg-gray-100">
         <Tarifs />
       </section>
+
+            {/* Section Avis */}
+            <section id="avis" className="py-16 bg-white">
+        <Avis /> {/* Ajout de la section Avis */}
+      </section>
+      
 
       <section id="contact" className="py-16 bg-gray-100">
         <Contact />

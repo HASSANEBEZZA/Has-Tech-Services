@@ -2,8 +2,9 @@ import React from 'react';
 import Header from './Header';
 import QuiSommesNous from './QuiSommesNous';
 import Services from './Service'; 
-import Tarifs from '../pages/Tarifs'; // Import du composant Tarifs
+import Tarifs from './Tarifs'; // Import du composant Tarifs
 import Contact from './Contact';
+import Avis from './Avis';  // Import du composant Avis
 import Footer from './Footer';
 import './HomePage.scss';
 
@@ -46,9 +47,14 @@ const HomePage: React.FC = () => {
           <Services />
         </section>
 
-        {/* Section Tarifs (Ajoutée ici) */}
+        {/* Section Tarifs */}
         <section id="tarifs" className="py-16 bg-gray-100">
           <Tarifs />
+        </section>
+
+        {/* Section Avis */}
+        <section id="avis" className="py-16 bg-white">
+          <Avis />
         </section>
 
         {/* Section Contact */}
