@@ -5,6 +5,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Avis.scss";
 
+// Composant pour les flèches personnalisées
+const CustomArrow: React.FC<{ direction: string; onClick?: () => void }> = ({ direction, onClick }) => {
+  return (
+    <div className={`custom-arrow ${direction}`} onClick={onClick}>
+      {direction === "prev" ? <FaArrowLeft size={30} /> : <FaArrowRight size={30} />}
+    </div>
+  );
+};
+
 const Avis: React.FC = () => {
   // Liens des avis (screenshots des réseaux sociaux)
   const avisImages = [
@@ -53,15 +62,6 @@ const Avis: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-// Composant pour les flèches personnalisées
-const CustomArrow: React.FC<{ direction: string }> = ({ direction }) => {
-  return (
-    <div className={`custom-arrow ${direction}`}>
-      {direction === "prev" ? <FaArrowLeft size={30} /> : <FaArrowRight size={30} />}
-    </div>
   );
 };
 
